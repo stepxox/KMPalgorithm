@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 int knuth(char * string, char * pattern)
 {
     char *p1 = string;
@@ -30,4 +33,13 @@ int knuth(char * string, char * pattern)
         p1++;
     }
     return i;
+}
+
+int main() {
+    char string[] = "aasd";
+    char pattern[] = "asd";
+    int n = knuth(string, pattern);
+    printf("%d", n);
+
+    return 0;
 }
